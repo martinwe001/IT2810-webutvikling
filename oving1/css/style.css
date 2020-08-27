@@ -1,0 +1,53 @@
+.image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header {
+    text-align: center;
+}
+.small-header{
+    text-align: center;
+    font-size: 30px;
+}
+.image-column {
+    flex-direction: column;
+    margin: 20px;
+}
+.title-header {
+    text-align: center; 
+    background-color: black;
+}
+.svg {
+    background-color: black;
+}
+.button{
+    background-color:rgba(0, 80, 158,1);
+    width: 200px;
+    height: 40px;
+    align-self: center;
+}
+.text-div{
+    display: none;
+    background-color:rgb(229, 240, 250);
+    margin: 40px;
+}
+.doku-div{
+    display: flex;
+    flex-direction: column;
+}
+.artist {
+    align-self: center;
+}
+.crater {
+    visibility: hidden;
+}
+.star {
+    visibility: hidden;
+}

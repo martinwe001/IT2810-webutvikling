@@ -1,0 +1,23 @@
+<svg height="310" width="500">
+  <defs>
+      <linearGradient id="grad1">
+        <stop offset="0%" style="stop-color:rgb(255,0,0);stop-opacity:1"/>
+        <stop offset="50%" style="stop-color:rgb(255,128,0);stop-opacity:1"/>
+        <stop offset="100%" style="stop-color:rgb(255,255,0);stop-opacity:1"/>
+      </linearGradient>
+      <linearGradient id="grad2">
+        <stop offset="0%" style="stop-color:rgb(128,255,0);stop-opacity:1"/>
+        <stop offset="40%" style="stop-color:rgb(0,128,255);stop-opacity:1"/>
+        <stop offset="100%" style="stop-color:rgb(128,0,255);stop-opacity:1"/>
+      </linearGradient>
+  </defs>
+    <polygon points="220,0 220,200 20,200" style="fill:url(#grad1);stroke:black;stroke-width:4" />
+    <polygon points="260,0 260,200 460,0" style="fill:url(#grad2);stroke:black;stroke-width:4" />      
+    <polyline points="20,300 90,220 90,300" style="fill:none;stroke:black;stroke-width:6" />
+    <polyline points="110,220 110,300 180,220" style="fill:none;stroke:black;stroke-width:6" />
+    <polyline points="200,300 200,220" style="fill:none;stroke:black;stroke-width:6" />
+    <circle cx="260" cy="260" r="40" stroke="black" stroke-width="6" fill="white" />
+    <polygon points="295,253 305,253 305,267 295,267" style="fill:white;stroke:white" />
+    <polyline points="320,300 320,220" style="fill:none;stroke:black;stroke-width:6" />
+    <polyline points="345,300 345,220" style="fill:none;stroke:black;stroke-width:6" />
+</svg>

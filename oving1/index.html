@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>IT2810-Øving 1</title>
+  <link href="css/style.css" rel="stylesheet" >
+  <link rel="icon" href="http://www.pngmart.com/files/11/Sad-Pepe-The-Frog-PNG-Transparent-Picture.png">
+</head>
+
+<body style="background-color: rgb(160, 202, 238);">
+	<div class="page-container">
+		<div style="background-color: rgb(0,128,255);">
+			<div>
+				<h1 class="header">Øving 1 - IT2810 - WEBUTVIKLING</h1>
+			</div>
+		</div>
+		<div class="image-container">
+			<div class="image-column">
+				<h4 id='small-header' class="small-header">Canvas</h4>
+				<canvas id='canvas-day'></canvas>
+			</div>
+			<div id='image-column' class="image-column">
+				<h4 id ='small-header' class="small-header" >SVG</h4>
+				<svg id = 'svg' height="300" width="300">
+					<polygon id='beam' points="218,0 38,0 42,80 222,14" style="fill:rgba(255,255,0,0.3);stroke:none"/>
+					<polygon id='beam2' points="232,40 51,115 93,203" style="fill:rgba(255,255,0,0.3);stroke:none"/>
+					<polygon id='beam3' points="263,65 153,210 257,274 281,71" style="fill:rgba(255,255,0,0.3);stroke:none"/>
+					<circle id='sun' cx="300" cy="0" r="60" stroke="yellow" stroke-width="3" fill="yellow"/>
+					<circle id='crater' class='crater' cx="280" cy="0" r="10" stroke="black" stroke-width="2" fill = 'none'/>
+					<circle id='crater2' class='crater' cx="282" cy="40" r="15" stroke="black" stroke-width="2" fill = 'none'/>
+					<circle id='crater3' class='crater' cx="258" cy="22" r="12" stroke="black" stroke-width="2" fill = 'none'/>
+					<polygon id="star" class="star" points='100,15 90,40 120,25 80,25 110,40' style="fill: yellow; stroke:yellow"/>
+					<defs>
+						<linearGradient id="grad1">
+							<stop offset="0%" style="stop-color:rgb(255,0,0);stop-opacity:1"/>
+							<stop offset="20%" style="stop-color:rgb(255,128,0);stop-opacity:1"/>
+							<stop offset="40%" style="stop-color:rgb(255,255,0);stop-opacity:1"/>
+							<stop offset="60%" style="stop-color:rgb(128,255,0);stop-opacity:1"/>
+							<stop offset="80%" style="stop-color:rgb(0,128,255);stop-opacity:1"/>
+							<stop offset="100%" style="stop-color:rgb(128,0,255);stop-opacity:1"/>
+						</linearGradient>
+					</defs>
+					<polygon points="279.22095,127.37344, 273.42672,126.67111, 270.79298,123.15945, 262.01385,115.25824, 273.95347,114.73149, 274.64744,118.21248, 280,120, 287.5407,127.16614, 287.42132,132.77709, 293.98733,121.19704, 283.95924,102.93159, 283.83986,96.96248, 277.63199,86.45687, 268.91711,78.33889, 255.19926,59.42562, 248.28632,58.90715, 248.97761,63.57339, 240,60, 230,60, 235.15174,67.20268, 231.52244,72.56021, 236.87997,76.36232, 219.94327,84.65785, 206.63586,96.40985, 214.41292,99.17502, 205.08045,104.1869, 201.7968,108.16184, 212.78182,111.29592, 197.15702,128.17527, 202.06115,133.9918, 200,140, 190,140, 190.65619,112.77856, 202.1855,82.59546, 201.66458,37.08659, 191.1893,11.09241, 178.38621,7.21268, 183.04188,39.02645, 169.07486,13.03228, 158.9875,7.60066, 146.57244,9.15255, 167.135,56.09726, 152.39203,28.93916, 134.93954,21.50868, 121.15594,26.39401, 155.52772,66.87245, 134.93954,51.51856, 121.50489,46.63323, 113.47899,50.29722, 135.2885,71.23435, 142.26754,88.50747, 127.61155,72.97911, 118.18985,71.5833, 113.30452,75.77072, 136.16088,97.0568, 143.04886,114.35302, 118.49908,93.12079, 89.96826,86.04337, 63.87031,100.86171, 53.03155,119.20755, 39.17746,136.77256, 25.81816,136.52516, 19.3859,124.40284, 23.34421,106.83783, 40.41443,89.52022, 53.03155,74.92394, 56.98986,59.33809, 62.92733,65.27556, 65.43682,54.79631, 61.98464,43.40411, 54.90766,36.84496, 43.17024,32.70234, 48.17591,44.78498, 44.03329,63.94459, 53.87201,56.5224, 39.20023,77.2355, 12.2732,99.67469, 6.12297,115.78968, 12.29611,140.05649, 31.02839,152.1899, 46.38704,145.76273, 63.44804,130.85887, 55.99611,143.40949, 56.24399,147.35678, 68.50849,144.24199, 62.86293,154.26773, 61.69488,165.07218, 68.70317,161.86005, 64.78478,174.47182, 54.13596,184.94606, 44.37302,190.60635, 56.31254,201.19866, 65.91483,219.3247, 62.08567,219.77519, 66.96964,241.80713, 58.19662,249.11798, 65,250, 53.81011,256.13639, 62.14604,256.18308, 74.26123,246.49093, 59.18024,261.56098, 68.45262,259.62923, 78.49769,248.68268, 73.60394,258.85654, 81.58849,253.31887, 84.67928,238.89517, 80.04309,216.35813, 74.33773,196.79592, 97.46461,179.98943, 92.43703,193.20479, 95.88451,195.07217, 86.40393,200.67434, 95.59722,209.72398, 108.09435,244.05518, 100.42306,252.96048, 115.51919,251.15795, 138.21974,261.52489, 138.66404,253.08316, 131.25901,247.75154, 152.28929,259.00718, 149.32728,252.19456, 135.70203,243.60473, 152.73359,252.63886, 160.13861,257.22997, 157.91711,250.71355, 143.25515,241.38322, 162.80442,249.52875, 157.62091,243.30852, 144.73616,237.3845, 128.4451,237.6807, 112.59835,204.95049, 136.65704,178.03312, 164.50141,203.98683, 156.93874,207.59629, 168.62651,213.09641, 165.53269,217.73714, 182.20494,228.39363, 191.37765,255.53963, 178.17335,265.44286, 194.12855,264.3425, 214.48519,272.32011, 220,280, 219.20758,272.40645, 210.98424,264.0566, 226.54532,271.77388, 230,280, 231.35281,271.52086, 220,260, 236.91938,268.86409, 242.61246,272.65947, 240.0822,265.57475, 229.2021,256.71885, 213.5145,252.03788, 203.61137,219.88836, 217.84154,211.77848, 214.68963,220.24923, 220,220, 217.84154,227.932, 226.11529,226.94703, 239.90488,238.56968, 233.99505,256.49615, 240.69285,254.13222, 246.60268,239.94864, 245.53389,250.66074, 239.15061,258.67114, 245.78422,256.91886, 251.79201,241.02323, 249.03844,254.41562, 241.50739,261.51734, 249.41899,258.50339, 255.97433,246.29692, 252.71699,230.42584, 246.31699,222.39148, 236.01849,214.02396, 240,200, 244.58639,191.08008, 231.21626,191.82286, 246.22225,188.40314, 251.5983,175.93528, 240,180, 251.25515,171.93185, 251.71268,162.78113, 236.49962,170.55924, 250,160, 249.55814,152.16947, 236.34642,159.30807, 248.49268,149.07963, 246.78794,143.43269, 242.52609,147.3749, 246.14866,139.91666, 243.16537,127.13112, 251.04979,118.28779, 266.0728,131.39297, 273.95721,132.88462, 279.22095,127.37344" style="fill:url(#grad1);stroke:black;stroke-width:4" />
+					<text x="85" y="170" fill="black" font-family="Arial, Helvetica" font-size = "30px">HYBRIDA</text>
+				</svg>
+			</div>
+		</div>
+		<div class="artist">
+			<h4>Kunstneren</h4>
+			<p>Jeg er 23 år fra Oslo og går 4.året på I & IKT </p>
+		</div>
+		<div id="doku-div" class="doku-div">
+			<button class="button" id="button">Dokumentasjon</button>
+			<div id="doku" class="text-div">
+				<div style="margin: 20px;">
+					<h1 >Dokumentasjon</h1>
+					<h3>CSS-grid og Flexbox-layout</h3>
+					<p>
+						Jeg har brukt flexbox layout til å organisere komponentene min på siden. Flexbox gjør det lett å si hvordan komponenter skal være orientert i forhold til hverandre. Jeg har brukt til å både orientere vannrett og loddrett.
+					</p>
+					<h3>HTML Canvas og SVG i HTML</h3>
+					<p>
+						HTML 5 Canvas - For å lage Canvas bildet trengte jeg mye forarbeid. Det startet
+						med at jeg bare ville lage en griff. Men etter hvert som jeg lærte mer om 
+						Canvas forstod jeg at jeg kunne få den til å "tegne seg selv". For å finne
+						omrisset til griffen puttet jeg et bilde på PNG format inn i GeoGebra. Der satt 
+						jeg punkter rundt hele figuren. Jeg klarte ikke å eksportere punktene så jeg 
+						kopierte alle til et .txt dokument. Deretter lagde jeg et script som lagde 2 lister
+						en for x- og en for y koordianater. Første gangen jeg gjorde dette ble koordinatene 
+						helt feil fordi akseretningen er forskjellige steder i Canvas og kartesisk koordinatsystem.
+						Etter å ha gjort alt på nytt sto jeg igjen med en griff. For å få den til å bli tegnet,
+						brukte jeg requestAnimationFrame() funksjonen, den lager en loop som kjører hver frame.
+						Så gjorde jeg at den tegnet neste steg hver loop, satte på litt delay og visket ut alt
+						når tegningen var ferdig. Til slutt lagde jeg sirkelen med tekst i for å ha med litt
+						forskjellige former.
+					</p>
+					<img src="script.PNG">
+					<p>
+						SVG - For å lage SVG-en har jeg tegnet ulike streker. Jeg hadde et predefinert området som jeg utifra et koordinatsystem, basert på pixler som griffen befinner seg i. Griffen i logoen har jeg valgt å fylle med en regnbuegradient. Dette gjorde jeg ved å definere en  lineargradient og putte inn fargene til regnbuen.
+					</p>
+					<h3>jQuery</h3>
+					<p></p>
+					<h3>Cross-browser testing</h3>
+					<p></p>
+					<h3>Informasjonskilder</h3>
+					<ul>
+						<li>http://w3schools.com - HTML, css, canvas, SVG</li>
+						<li>http://stackoverflow.com - diverse</li>
+						<li>https://www.youtube.com/watch?v=83L6B13ixQ0 - Canvas</li>
+						<li>https://www.youtube.com/watch?v=ZJSCl6XEdP8 - SVG</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script src="scripts/lo.js"></script>
+	<script src="scripts/drawing.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$('#button').on('click', function() {
+			$('#doku').toggle()
+		})
+	</script>
+	<script>
+		$('#svg').hover(function(){
+			$('#svg').css("background-color", "rgb(31, 38, 59)")
+			$('#beam').css("visibility", "hidden")
+			$('#beam2').css("visibility", "hidden")
+			$('#beam3').css("visibility", "hidden")	
+			$('#sun').css({"fill": "rgb(255, 252, 215)",'stroke':'rgb(255, 252, 215)'})
+			$('#crater').css("visibility", "visible")
+			$('#crater2').css("visibility", "visible")
+			$('#crater3').css("visibility", "visible")
+			$('#star').css('visibility','visible')
+		
+			},
+			function(){
+			$('#svg').css("background-color", "inherit")
+			$('#beam').css("visibility", "visible")
+			$('#beam2').css("visibility", "visible")
+			$('#beam3').css("visibility", "visible")	
+			$('#sun').css({"fill": "yellow",'stroke':'yellow'})
+			$('#crater').css("visibility", "hidden")
+			$('#crater2').css("visibility", "hidden")
+			$('#crater3').css("visibility", "hidden")
+			$('#star').css('visibility','hidden')
+
+			})
+	</script>
+	<script>
+		$('#canvas-day').hover(function(){
+			draw1('night')
+			
+		},
+		function(){
+			draw1('day')
+		})
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+Gi en beskrivelser av hvordan du har brukt CSS-grid og Flexbox-layout, forklar dine valg. 
+    Jeg har brukt flexbox layout til å organisere komponentene mine på siden. Flexbox gjør
+    det lett å si hvordan komponenter skal være orientert i forhold til hverandre. Det er mulig å endre hvilke retning 
+    elementene skal organiseres. Jeg
+    har brukt til å både orientere vannrett og loddrett. Innen for flexboxen er det også mulig å justere
+    Hvor i flexboxen innholdet ender opp. For eksempel midten, venstre, høyre. Jeg har i dette prosjektet valgt å sentrere komponentene.
+Gi en beskrivelse av hvordan du har brukt HTML canvas og SVG i HTML. 
+    HTML 5 - Canvas - For å lage Canvas bildet trengte jeg mye forarbeid. Det startet
+    med at jeg bare ville lage en griff. Men etter hvert som jeg lærte mer om 
+    Canvas forstod jeg at jeg kunne få den til å "tegne seg selv". For å finne
+    omrisset til griffen puttet jeg et bilde på PNG format inn i GeoGebra. Der satt 
+    jeg punkter rundt hele figuren. Jeg klarte ikke å eksportere punktene så jeg 
+    kopierte alle til et .txt dokument. Deretter lagde jeg et script som lagde 2 lister
+    en for x- og en for y koordianater. Første gangen jeg gjorde dette ble koordinatene 
+    helt feil fordi akseretningen er forskjellige steder i Canvas og kartesisk koordinatsystem.
+    Etter å ha gjort alt på nytt sto jeg igjen med en griff. For å få den til å bli tegnet,
+    brukte jeg requestAnimationFrame() funksjonen, den lager en loop som kjører hver frame.
+    Så gjorde jeg at den tegnet neste steg hver loop, satte på litt delay og visket ut alt
+    når tegningen var ferdig. Til slutt lagde jeg sirkelen med tekst i for å ha med litt
+    forskjellige former.
+
+    SVG - For å lage SVG-en har jeg tegnet ulike streker. Jeg hadde et predefinert området
+    som jeg utifra et koordinatsystem, basert på pixler som griffen befinner seg i. 
+    Griffen i logoen har jeg valgt å fylle med en regnbuegradient. Dette gjorde
+    jeg ved å definere en  lineargradient og putte inn fargene til regnbuen.
+
+Gi en kort beskrivelse av hvordan du har brukt jQuery.
+
+Gi en kort beskrivelse av hvordan du har utført cross-browser testing. 
+List opp de viktigste (mest nyttige) informasjonskildene du har brukt (tutorials, websider, bøker).
+    http://w3schools.com
+    http://stackoverflow.com
+    https://www.youtube.com/watch?v=83L6B13ixQ0
+    https://www.youtube.com/watch?v=ZJSCl6XEdP8
+    
